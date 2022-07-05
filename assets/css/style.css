@@ -155,7 +155,7 @@ body {
 }
 
 a {
-    color: #55CBD2;
+    color: var{--alcides-blue};
     text-decoration: none;
     -o-transition: all .3s;
     -moz-transition: all .3s;
@@ -295,7 +295,7 @@ address {
     margin-bottom: 10px;
 }
 #banner-home{
-    background-image:url('../img/slider/1.jpg');
+    background-image:url('{{ site.url }}{{ site.baseurl }}/img/slider/1.jpg');
     height:350px;
     margin-bottom: 30px;
     padding-top: 120px;
@@ -304,7 +304,7 @@ address {
 @media (min-width: 100px) and (max-width: 800px) { 
  
     #banner-home{
-    background-image:url('{{site.url }}{{ site.baseurl }}/img/slider/1.jpg');
+    background-image:url('{{ site.url }}{{ site.baseurl }}/img/slider/1.jpg');
     height:450px;
     margin-bottom: 30px;
     }
@@ -450,7 +450,7 @@ p.blog-text{
   margin-top: 50px;
 }
 .services-section .services-icon {
-  color: #1bbd9b;
+  color: var(--alcides-blue);
   margin-bottom: 30px;
 }
 .services-section .services-title {
@@ -535,7 +535,7 @@ footer h3 {
 }
 
 #social-icons .btn-group {
-    color: #55CBD2;
+    color: var{--alcides-blue};
     margin-right: 15px;
 }
 #social-icons .btn-group:hover {
@@ -545,9 +545,16 @@ footer h3 {
 .copyright {
     color: #fff;
     padding: 20px 0px 10px 0px;
-    background-color: rgb(23, 23, 23);
+    background-color: black;
+    float:left;
 }
 
+.imprint {
+    color: #fff;
+    padding: 20px 0px 10px 0px;
+    background-color: black;
+    float:right;
+}
 /*
 * ==========================================================================
 * Custom Sidebar Widgets

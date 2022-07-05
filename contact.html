@@ -21,7 +21,8 @@
   <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
   <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://sulibo.github.io/alcides-robotics/assets/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="https://sulibo.github.io/alcides-robotics/assets/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://sulibo.github.io/alcides-robotics/assets/font-awesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://sulibo.github.io/alcides-robotics/assets/font-awesome/css/all.css">
   <link rel="stylesheet" href="https://sulibo.github.io/alcides-robotics/assets/css/animate.min.css">
   <link rel="stylesheet" href="https://sulibo.github.io/alcides-robotics/assets/css/style.css">
 </head>
@@ -59,9 +60,6 @@
           <a href="https://sulibo.github.io/alcides-robotics/blog.html">Blog</a>
       </li>
       <li>
-          <a href="https://sulibo.github.io/alcides-robotics/team.html">Team</a>
-      </li>
-      <li>
           <a href="https://sulibo.github.io/alcides-robotics/contact.html"><span>Contact</span></a>
       </li>
     </ul>         
@@ -91,9 +89,12 @@
     <div class="container">
       <div class="col-lg-4">
         <h4>Find us at:</h4>
-
+        <em>
         <p class="block-author">ALCiDES Robotics GmbH</p>
-        <p></p>
+        <p>Josefstraße 10</p>
+        <p>51377 Leverkusen</p>
+        <p>Germany</p>
+        </em>
         <p>Phone: 0049 (0) 214 314 997 0</p>
         <p>Fax: 0049 (0) 214 314 997 17</p>
 
@@ -118,12 +119,16 @@
         <div class="feedback-form">
 
           <div id="contact-response"></div>
-          
-          <form action="http://templates.designorbital.com/baleen/contact.php" method="post" id="contact-form">
+          <form action="https://api.web3forms.com/submit" method="POST">
             <fieldset>
+              <input type="hidden" name="access_key" value="9503d3e9-effc-41a9-9da2-a727c4d6aee3">
               <div class="form-group form-group-fullname">
                 <label class="control-label" for="fullname">NAME *</label>
                 <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter Your Name">
+              </div>
+              <div class="form-group form-group-fullname">
+                <label class="control-label" for="fullname">COMPANY *</label>
+                <input type="text" class="form-control" name="companyname" id="companyname" placeholder="Enter Your Company Name">
               </div>
               <div class="form-group form-group-email">
                 <label class="control-label" for="email">E-MAIL *</label>
@@ -134,9 +139,9 @@
                 <textarea class="form-control" name="message" id="message" rows="3"></textarea>
               </div>           
               <button type="submit" class="btn btn-primary">Submit</button>
+              <input type="hidden" name="redirect" value="https://sulibo.github.io/alcides-robotics/thanks.html">
             </fieldset>
           </form>
-          
         </div> 
       </div>
     </div>
@@ -144,66 +149,73 @@
 </div>    
     
 <!--End Main Container -->
+
   </body>
 
   <!-- Footer -->
-<footer> 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h3><i class="fa fa-map-marker"></i> Contact:</h3>
-        <p class="footer-contact">
-          ALCiDES Robotics GmbH <br>
-          Phone: 0049 (0) 214 314 997 0 <br>
-          Fax: 0049 (0) 214 314 997 17 <br>
-          Email: info@alcides-robotics.com<br>
-        </p>
-      </div>
-      <div class="col-md-4">
-        <h3><i class="fa fa-external-link"></i> Links</h3>
-        <p><a href="https://sulibo.github.io/alcides-robotics/about"> About ( Who we are )</a></p>
-        <p><a href="https://sulibo.github.io/alcides-robotics/about"> Services ( What we do )</a></p>
-        <p><a href="https://sulibo.github.io/alcides-robotics/contact"> Contact ( Feel free to contact )</a></p>
-        <p><a href="https://sulibo.github.io/alcides-robotics/blog"> Blog ( Write to us )</a></p>
-        <p><a href="https://sulibo.github.io/alcides-robotics/team"> Team ( Meet the Team )</a></p> 
-      </div>
-      <div class="col-md-4">
-        <h3><i class="fa fa-heart"></i> Socialize</h3>
-        <div id="social-icons">
-          
-            <a href="http://plus.google.com" class="btn-group google-plus">
-              <i class="fa fa-google-plus"></i>
-            </a>
-          
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3><i class="fa fa-map-marker"></i> Contact</h3>
+                <p class="footer-contact">
+                    ALCiDES Robotics GmbH <br>
+                    <em>
+                        Josefstraße 10 <br>
+                        51377 Leverkusen <br>
+                        Germany <br>
+                    </em>
+                    Phone: 0049 (0) 214 314 997 0 <br>
+                    Fax: 0049 (0) 214 314 997 17 <br>
+                    Email: info@alcides-robotics.com<br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h3><i class="fa fa-external-link"></i> Links</h3>
+                <p><a href="https://sulibo.github.io/alcides-robotics/about"> About </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/software"> Software </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/products"> Products </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/blog"> Blog </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/contact"> Contact </a></p>
+            </div>
+            <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> Social Media</h3>
+                <div id="social-icons">
+                    
 
-          
-            <a href="http://www.linkedin.com" class="btn-group linkedin">
-              <i class="fa fa-linkedin-square"></i>
-            </a>
-          
+                    
+                    <a href="http://www.linkedin.com" class="btn-group linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    
 
-          
-            <a href="http://www.twitter.com" class="btn-group twitter">
-              <i class="fa fa-twitter"></i>
-            </a>
-          
+                    
+                    <a href="http://www.twitter.com" class="btn-group twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    
 
-          
-            <a href="http://www.facebook.com" class="btn-group facebook">
-              <i class="fa fa-facebook"></i>
-            </a>
-          
+                    
+                    <a href="http://www.facebook.com" class="btn-group facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    
+                </div>
+            </div>
         </div>
-      </div>    
     </div>
-  </div>
-
-  <div class="copyright text center">
-    <p>&copy; Copyright 2022, <a href="#">ALCiDES Robotics GhbH</a>. 
+    <div class="container">
+            <p><span class="copyright">&copy; Copyright 2022, <a href="#">ALCiDES Robotics
+                        GmbH</a>. </span>
+                <span class="imprint">
+                    <a href="https://sulibo.github.io/alcides-robotics/privacy-policy"> PRIVACY POLICY </a>
+                    &nbsp; &nbsp;
+                    <a href="https://sulibo.github.io/alcides-robotics/imprint"> IMPRINT </a>
+                </span>
+            </p>
+    </div>
     <!--
     <br>Theme ported by <a href="https://melvinchng.github.io/" target="_blank">Melvin Ch'ng</a></p>
     -->
-  </div>
 </footer>
-
 </html>
