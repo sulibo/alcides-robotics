@@ -28,8 +28,7 @@
 </head>
 
   <!-- Header -->
-<nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
-  <div class="container">
+<nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky navbar-fixed-top" role="navigation">
   
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -39,12 +38,12 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="navbar-brand wow fadeInDownBig" href="index.html"><img class="office-logo" src="https://sulibo.github.io/alcides-robotics/assets/img/slider/alcides/logo.png" alt="Alcides"></a>      
+    <a class="navbar-brand wow fadeInDownBig" href="https://sulibo.github.io/alcides-robotics/"><img class="office-logo" src="https://sulibo.github.io/alcides-robotics/assets/img/slider/alcides/logo.png" alt="Alcides"></a>      
   </div>
 
   <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav pull-right">
-      <li class="active">
+      <li>
           <a href="https://sulibo.github.io/alcides-robotics/">Home</a>
       </li>
       <li>
@@ -64,7 +63,6 @@
       </li>
     </ul>         
   </div>
-  </div>
 </nav>
 
 <!-- End Header -->
@@ -76,6 +74,16 @@
   new WOW().init();
 </script>
 
+<script>
+  $(function ($) {
+    let url = window.location.href;
+    $('li a').each(function () {
+      if (this.href === url) {
+        $(this).closest('li').addClass('active');
+      }
+    });
+  });
+</script>
 
   <body>
     <!-- Begin #carousel-section -->
@@ -209,11 +217,11 @@
             </div>
             <div class="col-md-4">
                 <h3><i class="fa fa-external-link"></i> Links</h3>
-                <p><a href="https://sulibo.github.io/alcides-robotics/about"> About </a></p>
-                <p><a href="https://sulibo.github.io/alcides-robotics/software"> Software </a></p>
-                <p><a href="https://sulibo.github.io/alcides-robotics/products"> Products </a></p>
-                <p><a href="https://sulibo.github.io/alcides-robotics/blog"> Blog </a></p>
-                <p><a href="https://sulibo.github.io/alcides-robotics/contact"> Contact </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/about.html"> About </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/software.html"> Software </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/products.html"> Products </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/blog.html"> Blog </a></p>
+                <p><a href="https://sulibo.github.io/alcides-robotics/contact.html"> Contact </a></p>
             </div>
             <div class="col-md-4">
                 <h3><i class="fa fa-heart"></i> Social Media</h3>

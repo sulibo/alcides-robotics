@@ -181,6 +181,7 @@ body {
   font-size: 15px;
   line-height: 24px;
   background: #F8FAFF;
+  padding-top: 81px;
 }
 
 a {
@@ -278,7 +279,6 @@ address {
 }
 
 .active {
-  background: #74B9B9 !important;
   background: var(--alcides-blue) !important;
   color: white;
 }
@@ -288,6 +288,7 @@ address {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
+  background-color: white;
 }
 
 /*
