@@ -186,6 +186,7 @@ body {
 
 a {
   color: var(--alcides-blue);
+  overflow-wrap: break-word;
   text-decoration: none;
   transition: all .3s;
   -o-transition: all .3s;
