@@ -1,0 +1,474 @@
+/*
+Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
+Bootstrap v5.2.0-beta1 (https://getbootstrap.com/)
+*/
+
+/*
+* ==========================================================================
+* Global
+* ==========================================================================
+*/
+:root {
+    --alcides-blue: #0565B3
+}
+
+.logo {
+    width: 200px;
+}
+
+
+a {
+    color: var(--alcides-blue) !important;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    transition: all .3s;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+a:hover {
+    color: #888;
+    text-decoration: none;
+}
+
+/*
+* ==========================================================================
+* Navbar
+* ==========================================================================
+*/
+
+.navbar-nav li.active>a {
+    background: var(--alcides-blue) !important;
+    color: white !important;
+}
+
+.navbar-nav li.active>a:hover,
+.navbar-nav li.active>a:focus {
+    background: var(--alcides-blue) !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    color: var(--alcides-blue);
+}
+
+.navbar .navbar-nav li a {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    background: inherit;
+}
+
+
+/*
+* ==========================================================================
+* Page content
+* ==========================================================================
+*/
+
+.section-wrapper {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-wrapper .content-block {
+    margin-bottom: 50px;
+}
+
+.section-wrapper .content-block .content-block-title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section-wrapper .content-block .content-block-subtitle {
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-style: italic;
+}
+
+.section-wrapper .content-block .content-block-body {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .section-wrapper {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/*
+* ==========================================================================
+* Profile
+* ==========================================================================
+*/
+.feature-entry {
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.feature-entry .feature-icon {
+    color: var(--alcides-blue);
+    margin-bottom: 20px;
+}
+
+.feature-entry .feature-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feature-entry .feature-body {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+@media (max-width: 767px) {
+    .feature-entry {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/*
+* ==========================================================================
+* Products Section
+* ==========================================================================
+*/
+.product-entry {
+    margin-bottom: 5rem;
+}
+
+.product-entry .product-info {
+    margin-bottom: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.product-entry .product-info .product-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.product-entry .product-info .product-alias {
+    font-style: italic;
+    font-size: 1.75rem;
+}
+
+.product-entry .product-info .product-description {
+    margin-bottom: 1rem;
+}
+
+.product-entry .image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.product-entry img {
+    width: 100%;
+}
+
+#products .btn-primary {
+    margin-top: 1.5rem;
+    background: var(--alcides-blue);
+    color: white !important;
+    font-size: 1.2rem;
+}
+
+/*
+* ==========================================================================
+* Company
+* ==========================================================================
+*/
+.key-tech-entry {
+    width: 100%;
+}
+
+.key-tech-entry .key-tech-icon {
+    width: 30%
+}
+
+.key-tech-entry .key-tech-info {
+    font-size: 20px;
+    width: 60%
+}
+
+.team-member-entry {
+    width: 100%;
+}
+
+.team-member-entry .team-member-icon {
+    width: 30%;
+}
+
+.team-member-entry .team-member-icon .team-member-image {
+    background-color: white;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.team-member-entry .team-member-info {
+    font-size: 20px;
+    width: 60%
+}
+
+/*
+* ==========================================================================
+* Blog
+* ==========================================================================
+*/
+
+.blog-entry {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-top: 0 !important;
+    padding-bottom: 20px;
+}
+
+.blog-entry .blog-entry-block {
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-transition: -moz-transform 0.25s ease, opacity 0.25s ease, -moz-filter 1s ease, -webkit-filter 1s ease;
+    -webkit-transition: -webkit-transform 0.25s ease, opacity 0.25s ease, -webkit-filter 1s ease, -webkit-filter 1s ease;
+    -ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
+    transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
+    padding: 4em 4em 2em 4em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: default;
+    height: 30vh;
+    max-height: 40em;
+    min-height: 23em;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.blog-entry .blog-entry-block .image {
+    display: none;
+}
+
+.blog-entry .blog-entry-block .blog-entry-content {
+    color: white !important;
+    position: relative;
+    z-index: 3;
+    text-align: start;
+}
+
+.blog-entry .blog-entry-block hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #fff;
+    /* old IE */
+    background-color: #fff;
+    /* Modern Browsers */
+}
+
+.blog-entry .blog-entry-block h3 {
+    font-size: 1.75em;
+    color: #fff;
+}
+
+.blog-entry .blog-entry-block a {
+    color: #fff !important;
+}
+
+.blog-entry .blog-entry-block h3 a:hover {
+    color: inherit !important;
+}
+
+.blog-entry .blog-entry-block:before {
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background-color: black;
+}
+
+.blog-entry .blog-entry-block:after {
+    background-color: rgba(36, 41, 67, 0.25);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.blog-entry .blog-entry-block:hover:before {
+    opacity: 0;
+}
+
+.blog-entry .blog-entry-block.is-transitioning {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+    -moz-filter: blur(0.5em);
+    -webkit-filter: blur(0.5em);
+    -ms-filter: blur(0.5em);
+    filter: blur(0.5em);
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 736px) {
+
+    .blog-entry .blog-entry-block h3 {
+        font-size: 1.5em;
+    }
+
+}
+
+/*
+* ==========================================================================
+* Contact
+* ==========================================================================
+*/
+.map-banner {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.contact-block {
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.contact-block h3 {
+    padding-bottom: 10px;
+}
+
+.contact-block .btn-primary {
+    background-color: var(--alcides-blue);
+}
+
+.contact-block a {
+    color: var(--alcides-blue);
+}
+
+.contact-block .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-block .form-comment {
+    margin-bottom: 20px;
+}
+
+.contact-block .control-label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/*
+* ==========================================================================
+* Carousel
+* ==========================================================================
+*/
+.carousel-caption {
+    color: var(--alcides-blue) !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.carousel-caption h5 {
+    color: var(--alcides-blue);
+    font-size: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .carousel-caption {
+        font-size: 12px;
+        padding-bottom: 0px;
+        bottom: 2px;
+    }
+
+    .carousel-caption .carousel-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-caption {
+        font-size: 11px;
+        padding-bottom: 0;
+        bottom: 0;
+    }
+
+    .carousel-caption .carousel-title {
+        font-size: 14px;
+    }
+}
+
+
+/*
+* ==========================================================================
+* Footer
+* ==========================================================================
+*/
+
+footer {
+    background: black;
+    padding-top: 20px;
+    color: white;
+}
+
+footer h3 {
+    color: #dadada;
+    margin-bottom: 20px;
+}
+
+footer a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
+footer .btn-group {
+    font-size: 22px;
+    padding-right: 10px;
+}
