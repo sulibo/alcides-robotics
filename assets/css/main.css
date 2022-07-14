@@ -108,6 +108,9 @@ a:hover {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+    .section-wrapper .content-block .content-block-title {
+        font-size: 2rem;
+    }
 }
 
 /*
@@ -197,8 +200,7 @@ a:hover {
     color: white !important;
     font-size: 1.2rem;
 }
-
-/*
+tion-wrapper 
 * ==========================================================================
 * Company
 * ==========================================================================
@@ -361,8 +363,8 @@ a:hover {
 
 
 
-@media screen and (max-width: 736px) {
-
+@media screen and (max-width: 767px) {
+3
     .blog-entry .blog-entry-block h3 {
         font-size: 1.5em;
     }

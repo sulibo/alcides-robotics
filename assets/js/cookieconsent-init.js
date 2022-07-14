@@ -38,8 +38,8 @@ cc.run({
     languages: {
         'en': {
             consent_modal: {
-                title: 'We use cookies!',
-                description: 'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+                title: 'Cookie Settings',
+                description: 'This website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
                 primary_btn: {
                     text: 'Accept all',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
@@ -64,7 +64,7 @@ cc.run({
                 blocks: [
                     {
                         title: 'Cookie usage 📢',
-                        description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.'
+                        description: 'We use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="privacy-policy" class="cc-link">privacy policy</a> and <a href="imprint" class="cc-link">imprint</a>.'
                     }, {
                         title: 'Strictly necessary cookies',
                         description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
@@ -106,10 +106,13 @@ cc.run({
                         }
                     }, {
                         title: 'More information',
-                        description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                        description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="contact">contact us</a>.',
                     }
                 ]
             }
         }
     }
 });
+
+// Set theme to alcides
+document.body.classList.toggle('c_alcides');
